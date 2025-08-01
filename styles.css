@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+  --c-grey: #35383F;
+  --c-light: #ECEDF0;
+  --c-blue: #1F6FB0;
+  --c-storm: #404A65;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +15,8 @@
 
 body {
   height: 100vh;
-  background-color: #404A65;
-  color: #ECEDF1;
+  background-color: var(--c-storm);
+  color: var(--c-light);
   font-family: "Kanit", sans-serif;
   font-weight: 600;
 }
@@ -53,14 +60,14 @@ h1 {
 
 
   /* Heading Text Shadow */
-  text-shadow: 3px 3px 0px #35383f;
+  text-shadow: 3px 3px 0px var(--c-grey);
   -webkit-text-stroke-width: 5px;
-  -webkit-text-stroke-color: #35383f;
+  -webkit-text-stroke-color: var(--c-grey);
 
 }
 
 p {
-  font-size: 1.46875rem;
+  font-size: 1.5rem;
   text-shadow: none;
 }
 
@@ -69,13 +76,13 @@ p {
 .result {}
 
 button[type="submit"] {
-  background: #206FB1;
-  color: #EDECF1;
+  background: var(--c-blue);
+  color: var(--c-light);
   font-size: 1.25rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  border: 1px solid #206FB1;
+  border: 1px solid var(--c-blue);
   /* Button Shadow */
   box-shadow: 0px 4px 0px 0px #23649b;
   text-transform: uppercase;
@@ -85,6 +92,6 @@ button[type="submit"] {
   min-height: 2.8125rem;
 
   &:hover {
-    background: #35383f;
+    background: var(--c-grey);
   }
 }
