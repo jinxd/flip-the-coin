@@ -7,6 +7,7 @@
 
     <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
     <title>Flip the coin | devChallenges.io</title>
   </head>
 
@@ -25,9 +26,12 @@
       <p class="instructions">Press coin or the button to flip the coin</p>
 
       <!-- coin image -->
-
+      <div class="coin">
+        <img src="./resources/heads.svg" alt="Coin" id="coinImg">
+        <img src="./resources/shadow.svg" alt="Coin Shadow">
+      </div>
       <p class="result">Heads</p>
-      <button type="submit">Random</button>
+      <button type="submit" id="flip">Random</button>
     </div>
 
     <div class="author-info">
