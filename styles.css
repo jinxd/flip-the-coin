@@ -43,10 +43,12 @@ body {
 }
 
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
+  top: 4rem;
 
   gap: 1rem;
   height: 100%;
