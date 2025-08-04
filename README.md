@@ -37,7 +37,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/jinxd/flip-the-coin/screenshot.png)
+![screenshot](screenshot.png)
 
 This project is a simple coin flip simulator built as part of the [devChallenges.io](https://devchallenges.io/) Flip The Coin challenge. The app allows users to flip a virtual coin.
 
