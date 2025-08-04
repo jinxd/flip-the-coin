@@ -19,18 +19,21 @@
     <title>Flip the coin | devChallenges.io</title>
   </head>
 
-  <body>
+  <body class="temp">
     <div class="wrapper">
       <h1>Flip the coin</h1>
-      <p class="instructions">Press coin or the button to flip the coin</p>
+      <p class="instructions">Press the coin or the button to flip the coin</p>
 
       <!-- coin image -->
       <div class="coin">
         <img src="./resources/heads.svg" alt="Coin" id="coinImg">
-        <img src="./resources/shadow.svg" alt="Coin Shadow">
+        <img src="./resources/shadow.svg" alt="Coin Shadow" class="shadow">
       </div>
-      <p class="result">Heads</p>
-      <button type="submit" id="flipBtn">Random</button>
+
+      <div class="result-btn">
+        <p class="result">Heads</p>
+        <button type="submit" id="flipBtn">Random</button>
+      </div>
     </div>
 
     <div class="author-info">

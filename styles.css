@@ -45,10 +45,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
-  top: 4rem;
-
-  gap: 1rem;
+  top: 17.75vh;
+  gap: 0.75rem;
   height: 100%;
   text-align: center;
 }
@@ -56,11 +54,8 @@ body {
 h1 {
   font-size: 4rem;
   font-weight: 800;
-  letter-spacing: -1px;
-
-
-  /* Heading Text Shadow */
-  text-shadow: 3px 3px 0px var(--c-grey);
+  letter-spacing: -0.5px;
+  text-shadow: 2px 2px 0px var(--c-grey);
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: var(--c-grey);
 
@@ -69,18 +64,15 @@ h1 {
 p {
   font-size: 1.5rem;
   text-shadow: none;
+  font-weight: normal;
 }
-
-.instructions {}
-
-.result {}
 
 button[type="submit"] {
   background: var(--c-blue);
   color: var(--c-light);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 8px;
   border: 1px solid var(--c-blue);
   /* Button Shadow */
@@ -89,17 +81,26 @@ button[type="submit"] {
   text-align: center;
   width: 160px;
   min-width: fit-content;
-  min-height: 2.8125rem;
 
   &:hover {
     background: var(--c-grey);
   }
 }
 
+.result-btn {
+  position: relative;
+  top: 4.75rem;
+  display: grid;
+  gap: 3.75rem;
+}
+
 .coin {
+  position: relative;
+  top: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  align-items: center;
+  gap: 2.5rem;
   perspective: 1000px;
 }
 
@@ -110,6 +111,10 @@ button[type="submit"] {
 
 .coin .flipping {
   animation: flip 0.6s ease;
+}
+
+.coin .shadow {
+  width: fit-content
 }
 
 @keyframes flip {
